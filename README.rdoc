@@ -1,28 +1,12 @@
-== README
+First thing to note is this program suffers from a bug when creating new people or editing them. To get out of this, click the back button on the browser
+and then click the "back" button on the webpage (The one I made). This will bring you back to the index, where you fill find the person has been created.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I have chosen to split the colour requirement into 3 sections: red, green, and blue. Users are to input a value from 0 to 255 in each of this. This represents the 
+RGB value for any colour.
 
-Things you may want to cover:
+I have also added the attributes: country, gender, age, and language, for each person.
 
-* Ruby version
+I validate that all fields (name, weight, ...) are not blank, and have at least one character. Furthermore, I validate that weight, height, red, green, blue, and age are numbers,
+further validating that red, green, blue, and age are integers.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+People may be created, editing, and destroyed (deleted). Furthermore, you may display everyone in a bar chart to get a better idea of how everyone is compared to each other.
