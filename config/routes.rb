@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'welcome/index' 
 
   resources :people
+  resources :welcome #just in case
  
   root 'welcome#index'
 end
