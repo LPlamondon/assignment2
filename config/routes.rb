@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   get 'people/index'
+  
+  get 'people/display'
 
   #get 'people/new'
 

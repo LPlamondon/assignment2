@@ -19,7 +19,7 @@ class PeopleController < ApplicationController
     def create
         @person = Person.new(person_params)
         
-        if @person.save then
+        if @person.save
             redirect_to @person
         else
             render 'new'
