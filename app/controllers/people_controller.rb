@@ -5,7 +5,7 @@ class PeopleController < ApplicationController
     end
     
     def display
-        @person = Person.all        
+        @people = Person.all        
     end
     
     def show
