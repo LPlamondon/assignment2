@@ -7,7 +7,7 @@ Thomas Plamondon (My brother) helped me out with getting the display to work
 //-->
 <div style="background-color:white">
     <% @people.each do |person| %>
-        <div style="background-color:rgb(<%= person.red.to_s+","+person.green.to_s+","+person.blue.to_s %>); width:<%= person.weight %>px; height:<%= person.height %>px;">
+        <div style="background-color:rgb(<%= person.red.to_s+","+person.green.to_s+","+person.blue.to_s %>); width:<%= person.weight %>px; 1.5*height:<%= 1.5*person.height %>px;">
             <p><%= person.name %></p>
             <p><%= person.country %></p>
             <p><%= person.gender %></p>
