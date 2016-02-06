@@ -2,8 +2,8 @@ class Person < ActiveRecord::Base
     validates :name, presence: true,
                     length: {minimum: 1}
                     
-    validates :weight, presence: true,
-                    length: {minimum: 1}, numericality: true, greater_than_or_equal_to: 0
+    #validates :weight, presence: true,
+   #                 length: {minimum: 1}, numericality: true, greater_than_or_equal_to: 0
                     
    # validates :height, presence: true,
    #                 length: {minimum: 1}, numericality: true, greater_than_or_equal_to: 0
