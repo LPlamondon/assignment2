@@ -9,7 +9,7 @@ class Person < ActiveRecord::Base
                     length: {minimum: 1}, numericality: {greater_than_or_equal_to: 0}
                     
     validates :red, presence: true,
-                    length: {minimum: 1}, numericality: {only_integer: true}, greater_than_or_equal_to: 0, less_than: 256
+                    length: {minimum: 1}, numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than: 256}
                     
     validates :green, presence: true,
                     length: {minimum: 1}, numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than: 256}
