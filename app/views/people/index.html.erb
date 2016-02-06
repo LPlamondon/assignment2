@@ -1,6 +1,10 @@
 <h1>Listing People</h1>
 
+<br />
+
 <%= link_to 'New person', new_person_path %>
+
+<br />
  
 <table>
     <tr>
@@ -17,7 +21,7 @@
         <th><%= link_to 'Show All', people_display_path %></th>
   </tr>
  
-    <% @person.each do |person| %>
+    <% @people.each do |person| %>
         <tr>
             <td><%= person.name %></td>
             <td><%= person.weight %></td>
@@ -37,5 +41,7 @@
         </tr>
     <% end %>
 </table>
+
+<br />
 
 <%= link_to 'Back to Welcome', welcome_index_path %>
